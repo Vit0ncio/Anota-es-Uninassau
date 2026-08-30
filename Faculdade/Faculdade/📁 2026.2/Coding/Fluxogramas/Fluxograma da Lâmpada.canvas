@@ -1,0 +1,81 @@
+{
+	"nodes":[
+		{"id":"b7ea0ab75d5058b5","type":"text","text":"Acionar o Interruptor ","x":16,"y":244,"width":184,"height":50,"color":"3"},
+		{"id":"f2a51d2cab97cbd4","type":"text","text":"Início","x":70,"y":120,"width":75,"height":50,"color":"5"},
+		{"id":"89f6a719d0b1aab5","type":"text","text":"Manter a Lâmpada","x":-167,"y":460,"width":178,"height":50,"color":"4"},
+		{"id":"fa9f3dd8a602b867","type":"text","text":"Pegar a escada","x":205,"y":460,"width":156,"height":50,"color":"3"},
+		{"id":"2688e94bd302c375","type":"text","text":"Posicionar a escada embaixo da lâmpada","x":188,"y":580,"width":191,"height":50,"color":"3"},
+		{"id":"0aec3b939af93d59","type":"text","text":"Buscar uma lâmpada nova","x":217,"y":700,"width":133,"height":50,"color":"3"},
+		{"id":"910a6479478b2eb8","type":"text","text":"Acionar o interruptor","x":219,"y":820,"width":130,"height":50,"color":"3"},
+		{"id":"660062c882c5549c","type":"text","text":"Subir na escada","x":236,"y":940,"width":97,"height":54,"color":"3"},
+		{"id":"a75b8f1c6da7743a","type":"text","text":"Retirar a lâmpada queimada","x":204,"y":1080,"width":160,"height":50,"color":"3"},
+		{"id":"bd3d76684383be1b","type":"text","text":"Colocar a lâmpada nova","x":206,"y":1220,"width":157,"height":62,"color":"3"},
+		{"id":"e7e7f2902fb0c11c","type":"text","text":"Acionar o Interruptor ","x":192,"y":1360,"width":184,"height":50,"color":"3"},
+		{"id":"7089bdbd41db78c8","type":"text","text":"A lâmpada funcionou?","x":188,"y":1480,"width":194,"height":50,"color":"2"},
+		{"id":"cc87adcb8597ae48","type":"text","text":"Fim","x":-120,"y":1480,"width":70,"height":50,"color":"5"},
+		{
+			"id":"52072631c8802736",
+			"type":"text",
+			"text":"A lâmpada funcionou?",
+			"styleAttributes":{"textAlign":"center"},
+			"x":5,
+			"y":340,
+			"width":206,
+			"height":80,
+			"color":"2"
+		}
+	],
+	"edges":[
+		{
+			"id":"4f653f526543b0e2",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"52072631c8802736",
+			"fromSide":"left",
+			"toNode":"89f6a719d0b1aab5",
+			"toSide":"top",
+			"color":"4",
+			"label":"Sim"
+		},
+		{"id":"fc2cb279f14a1a94","toFloating":false,"fromNode":"89f6a719d0b1aab5","fromSide":"bottom","toNode":"cc87adcb8597ae48","toSide":"top"},
+		{"id":"3161587a86e13137","fromNode":"f2a51d2cab97cbd4","fromSide":"bottom","toNode":"b7ea0ab75d5058b5","toSide":"top"},
+		{"id":"131da2b1e8690a70","fromNode":"b7ea0ab75d5058b5","fromSide":"bottom","toNode":"52072631c8802736","toSide":"top"},
+		{
+			"id":"c06099f7ec1f1e36",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"52072631c8802736",
+			"fromSide":"right",
+			"toNode":"fa9f3dd8a602b867",
+			"toSide":"top",
+			"color":"1",
+			"label":"Não"
+		},
+		{"id":"1d02d411f4c49fa0","fromNode":"2688e94bd302c375","fromSide":"bottom","toNode":"0aec3b939af93d59","toSide":"top"},
+		{"id":"45923e101288dd67","fromNode":"0aec3b939af93d59","fromSide":"bottom","toNode":"910a6479478b2eb8","toSide":"top"},
+		{"id":"b3c0b47cac003702","fromNode":"fa9f3dd8a602b867","fromSide":"bottom","toNode":"2688e94bd302c375","toSide":"top"},
+		{"id":"18b32fe6f5c83b4c","fromNode":"910a6479478b2eb8","fromSide":"bottom","toNode":"660062c882c5549c","toSide":"top"},
+		{"id":"da89523463f5c292","fromNode":"660062c882c5549c","fromSide":"bottom","toNode":"a75b8f1c6da7743a","toSide":"top"},
+		{"id":"01b21d2be87a321c","fromNode":"a75b8f1c6da7743a","fromSide":"bottom","toNode":"bd3d76684383be1b","toSide":"top"},
+		{"id":"215f9153bc390bcf","fromNode":"bd3d76684383be1b","fromSide":"bottom","toNode":"e7e7f2902fb0c11c","toSide":"top"},
+		{
+			"id":"d523c2a219aa9246",
+			"toFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromFloating":false,
+			"fromNode":"7089bdbd41db78c8",
+			"fromSide":"right",
+			"toNode":"fa9f3dd8a602b867",
+			"toSide":"right",
+			"color":"1",
+			"label":"Não "
+		},
+		{"id":"3ff0c79b604dd5fb","fromNode":"e7e7f2902fb0c11c","fromSide":"bottom","toNode":"7089bdbd41db78c8","toSide":"top"},
+		{"id":"5322e1e4acbc726b","fromNode":"7089bdbd41db78c8","fromSide":"left","toNode":"cc87adcb8597ae48","toSide":"right","color":"4","label":"Sim"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

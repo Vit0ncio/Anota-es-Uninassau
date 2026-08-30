@@ -1,0 +1,102 @@
+{
+	"nodes":[
+		{
+			"id":"02038e330ce9e972",
+			"type":"text",
+			"text":"Início",
+			"styleAttributes":{"shape":"circle","textAlign":"center"},
+			"x":-245,
+			"y":80,
+			"width":85,
+			"height":50,
+			"color":"5"
+		},
+		{
+			"id":"9877c0f796749184",
+			"type":"text",
+			"text":"ARRASTA FIO",
+			"styleAttributes":{"textAlign":"center"},
+			"x":20,
+			"y":380,
+			"width":147,
+			"height":50,
+			"color":"4"
+		},
+		{
+			"id":"fbe92bc1a9342538",
+			"type":"text",
+			"text":"Fim ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":57,
+			"y":480,
+			"width":74,
+			"height":50,
+			"color":"5"
+		},
+		{
+			"id":"1b11a3cd2aea6359",
+			"type":"text",
+			"text":"Olhe para o lado direito",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-302,
+			"y":180,
+			"width":200,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"c263d367bf686cea",
+			"type":"text",
+			"text":"Olhe para o lado esquerdo ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-308,
+			"y":280,
+			"width":213,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"d0ef5c57140ab2b6",
+			"type":"text",
+			"text":"É seguro atravessar?",
+			"styleAttributes":{"textAlign":"center","shape":"diamond"},
+			"x":-292,
+			"y":380,
+			"width":180,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"2bf221a72a3f86b0",
+			"type":"text",
+			"text":"Melhor não atravessar ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-299,
+			"y":530,
+			"width":195,
+			"height":50,
+			"color":"1"
+		}
+	],
+	"edges":[
+		{"id":"8eb57ec27e32621c","fromNode":"02038e330ce9e972","fromSide":"bottom","toNode":"1b11a3cd2aea6359","toSide":"top"},
+		{"id":"763017c5e44a58c4","fromNode":"1b11a3cd2aea6359","fromSide":"bottom","toNode":"c263d367bf686cea","toSide":"top"},
+		{"id":"09ef393ed75a34e2","fromNode":"d0ef5c57140ab2b6","fromSide":"bottom","toNode":"2bf221a72a3f86b0","toSide":"top","color":"1","label":"Não "},
+		{"id":"44a89b49dbabb4ff","fromNode":"c263d367bf686cea","fromSide":"bottom","toNode":"d0ef5c57140ab2b6","toSide":"top"},
+		{
+			"id":"05e8dc83fc9dc5ef",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"2bf221a72a3f86b0",
+			"fromSide":"left",
+			"toNode":"02038e330ce9e972",
+			"toSide":"left"
+		},
+		{"id":"73d859317d7db8d3","fromFloating":false,"fromNode":"d0ef5c57140ab2b6","fromSide":"right","toNode":"9877c0f796749184","toSide":"left","color":"4","label":"Sim"},
+		{"id":"1688f3310f150857","fromNode":"9877c0f796749184","fromSide":"bottom","toNode":"fbe92bc1a9342538","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

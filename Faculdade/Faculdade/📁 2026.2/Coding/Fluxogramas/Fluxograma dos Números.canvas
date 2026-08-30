@@ -1,0 +1,99 @@
+{
+	"nodes":[
+		{
+			"id":"02038e330ce9e972",
+			"type":"text",
+			"text":"Início",
+			"styleAttributes":{"shape":"circle","textAlign":"center"},
+			"x":-245,
+			"y":80,
+			"width":85,
+			"height":50,
+			"color":"5"
+		},
+		{
+			"id":"c263d367bf686cea",
+			"type":"text",
+			"text":"Receber número B",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-290,
+			"y":280,
+			"width":175,
+			"height":50,
+			"color":"3"
+		},
+		{
+			"id":"1b11a3cd2aea6359",
+			"type":"text",
+			"text":"Receber número A",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-285,
+			"y":180,
+			"width":165,
+			"height":50,
+			"color":"3"
+		},
+		{"id":"2bf221a72a3f86b0","type":"text","text":"Número B é maior","x":-475,"y":480,"width":175,"height":50,"color":"1"},
+		{"id":"9877c0f796749184","type":"text","text":"Número A é maior","x":-105,"y":480,"width":164,"height":50,"color":"4"},
+		{"id":"fbe92bc1a9342538","type":"text","text":"Fim ","x":-239,"y":640,"width":74,"height":50,"color":"5"},
+		{
+			"id":"d0ef5c57140ab2b6",
+			"type":"text",
+			"text":"Número A é maior ou igual a número B?",
+			"styleAttributes":{"textAlign":"center","shape":"diamond"},
+			"x":-300,
+			"y":355,
+			"width":195,
+			"height":125,
+			"color":"2"
+		}
+	],
+	"edges":[
+		{"id":"8eb57ec27e32621c","fromNode":"02038e330ce9e972","fromSide":"bottom","toNode":"1b11a3cd2aea6359","toSide":"top"},
+		{"id":"763017c5e44a58c4","fromNode":"1b11a3cd2aea6359","fromSide":"bottom","toNode":"c263d367bf686cea","toSide":"top"},
+		{"id":"44a89b49dbabb4ff","fromNode":"c263d367bf686cea","fromSide":"bottom","toNode":"d0ef5c57140ab2b6","toSide":"top"},
+		{
+			"id":"ad56064df0ee480c",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"d0ef5c57140ab2b6",
+			"fromSide":"left",
+			"toNode":"2bf221a72a3f86b0",
+			"toSide":"top",
+			"color":"1",
+			"label":"Não "
+		},
+		{
+			"id":"002b7b0337e255c2",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"d0ef5c57140ab2b6",
+			"fromSide":"right",
+			"toNode":"9877c0f796749184",
+			"toSide":"top",
+			"color":"4",
+			"label":"Sim"
+		},
+		{
+			"id":"310b61e8b8278956",
+			"toFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"2bf221a72a3f86b0",
+			"fromSide":"bottom",
+			"toNode":"fbe92bc1a9342538",
+			"toSide":"left"
+		},
+		{
+			"id":"ef6861a72c199042",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"9877c0f796749184",
+			"fromSide":"bottom",
+			"toNode":"fbe92bc1a9342538",
+			"toSide":"right"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
