@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action = # method="post"><br>
+            <!-- 'disabled' desativa algum campo específico do formulário -->
+            <!-- 'required' pede algum campo específico do formulário ser preenchido obrigatoriamente -->
+            <!-- 'pattern' define uma lista e quando preciso, uma quantidade de caracteres para o campo
+                as letras/numeros em colchetes [a-z, 1-9] definem a lista de caracteres,
+                já o número em chave {9} define a quantidade EXATA de caracteres 
+            -->
+            Nome: <input type="text" name="nome" required pattern="[A-Za-z]{3}-[0-9]{4}"><br>
+            Email: <input type="email" name="email" placeholder="digite seu email"><br>
+            <button type="submit">Enviar</button>
+
+            <!-- Atividade prática -->
+            Celular: <input type="text" required pattern="\(\d{2}\) \d{5}-\d{4}">
+            CNPJ: <input type="text" required pattern="\d{2}.\d{3}.\d{3}/\d{4}-\d{2}">
+            Email: <input type="email" required pattern="\w\@\w">
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
