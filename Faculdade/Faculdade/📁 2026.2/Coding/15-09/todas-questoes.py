@@ -76,3 +76,66 @@ if idade >= 16:
         print("Entrada negada: Saldo insuficiente.")
 else:
     print("Entrada negada: Menor de 16 anos não pode entrar no evento.")
+
+
+import random
+
+rangemax = 0
+mult = 0.0
+i = 0
+
+dinheiro = int(input("Digite o valor total: "))
+
+if dinheiro <= 0:
+    print("vc nn tem saldo")
+
+print("1 - 1 a 5 (1.5x)")
+print("2 - 1 a 10 (2.0x)")
+print("3 - 1 a 20 (4.0x)")
+escolha = input("Digite uma dificuldade: ")
+
+if escolha == "1":
+    mult = 1.5
+    rangemax = 5
+
+elif escolha == "2":
+    mult = 2.0
+    rangemax = 10
+
+elif escolha == "3":
+    mult = 4.0
+    rangemax = 20
+
+else:
+    print("Opção inválida")
+
+while True:
+    print(f"Dinheiro total: {dinheiro}")
+    numero = random.randint(1,rangemax)
+
+    aposta = int(input("Digite o valor da aposta: "))
+
+    if aposta > dinheiro:
+        print("pobrekkkkkk")
+        break
+
+    print(f"Aposta atual: {aposta}")
+    dinheiro -= aposta
+
+    advinha = int(input(f"Digite um numero (de 1 a {rangemax}): "))
+
+    while i <= 2:
+        advinha == numero
+
+    if advinha == numero:
+        print(f"Acertou! o número é {numero}.")
+
+        aposta *= mult
+        dinheiro += aposta
+
+    elif advinha == 0:
+        print(f"Saindo... seu valor atual é {dinheiro}")
+        break
+
+    else:
+        print(f"Errou! o número é {numero}.")
